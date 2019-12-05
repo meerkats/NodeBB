@@ -1,4 +1,5 @@
-FROM node:lts
+# Formally node:lts - locking to version
+FROM node:12.13.1-stretch
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -10,7 +11,7 @@ COPY install/package.json /usr/src/app/package.json
 
 RUN npm install --only=prod && \
     npm cache clean --force
-    
+
 COPY . /usr/src/app
 
 ENV NODE_ENV=production \
