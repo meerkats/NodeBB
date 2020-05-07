@@ -43,6 +43,7 @@
 	"header.search": "Search",
 	"header.profile": "Profile",
 	"header.navigation": "Navigation",
+	"header.menu_toggle": "Toggle Navigation",
 
 	"notifications.loading": "Loading Notifications",
 	"chats.loading": "Loading Chats",
